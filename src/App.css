@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+:root {
+    --bg-main: #8d8b71;
+    --color-border: #999a7e;
+    --color-lol: #bebebd;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.gap-8 {
+    gap: 9px;
+}
+.gap-15 {
+    gap: 15px;
+}
+.gap-30 {
+    gap: 30px;
+}
+.m-kiri-15 {
+    margin-left: 20px;
+}
+/* header */
+.header-top-strip {
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* header main */
+.header-main {
+    background: var(--bg-main);
+}
+.header-main .input-group-text {
+    background-color: var(--color-lol);
+}
+
+.header-main .input-group input:focus {
+    border: inherit;
+    box-shadow: none;
+    
+}
+
+.header-main .container .header-main-links .login-hover {
+    position: absolute;
+    height: 7rem;
+    top: 4rem;
+    right: 3rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+
+.header-bottom {
+    background-color: var(--bg-main);
+}
+
+.header-bottom .menu-bottom .menu-links a {
+    color: white;
+    margin-right: 10px;
+    background: transparent;
+}
+.header-bottom .menu-bottom button {
+    border: none;
+}
+.header-bottom .menu-bottom button:focus {
+    box-shadow: none;
+}
+
+.header-bottom .dropdown .dropdown-menu {
+    width: 100%;
+    background: var(--bg-main);
+    transform: translate3d(0px, 50px, 0px)!important;
+}
+
+.header-bottom .dropdown .dropdown-item {
+    padding: 5px 20px;
+    margin-bottom: 5px;
+}
+.header-bottom .dropdown .dropdown-item:hover,
+.header-bottom .menu-bottom .menu-links a:hover {
+    background-color: transparent;
+    color: var(--color-lol)!important;
+}
+
+/* end header */
+
+/* start footer */
+.footer-main {
+    background: var(--bg-main);
+    border-bottom: 1px solid var(--color-border);
+}
+.footer-info {
+    background: var(--bg-main);
+    color: white;
+}
+
+/* end footer */
+
+/* start home */
+.home-wrapper-1 {
+    margin-bottom: 5rem;
+}
+.home-wrapper-1 .container .main-banner {
+    overflow-x: hidden;
+    
+}
+.card-hover:hover {
+    cursor: pointer;
+}
+
+
+/* end home */
+
+/* start detail */
+.detail-product .container .col-6 .p-5 button {
+    padding: .3rem 1rem;
+    border-radius: 2px;
+    margin: 5px 2px 5px 0;
+}
+/* end detail */
