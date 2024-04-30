@@ -35,8 +35,7 @@ function RootComponent() {
   return (
     <React.StrictMode>
       <Provider store={store}>
-        {showMessage && <DisplayMessage message="Website ini hanya dapat diakses pada layar laptop atau lebih besar." />}
-        <App />
+        {showMessage ? <DisplayMessage message="Website ini hanya dapat diakses pada layar laptop atau lebih besar." /> : <App/>}
       </Provider>
     </React.StrictMode>
   );
